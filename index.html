@@ -1,125 +1,82 @@
-<!DOCTYPE html>
-<head>
-<script src="/assets/jquery.js"></script>
-<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
-<style>
-body {
-  font-family: helvetica, sans-serif;
-  margin: 0 auto;
-  max-width: 600px;
-  background: #232323;
-}
-div {
-  height: 200px;
-  background-size: cover;
-  position: relative;
-  margin: 40px 0 0 0;
-  border-radius: 12px;
-}
-h1 {
-  font-family: 'Londrina Shadow', cursive;
-  text-align: center;
-  font-size: 75px;
-  color: #aaaaaa;
-  margin: 60px 0 0 0;
-}
-h2 {
-  text-align: center;
-  color: #bbbbbb;
-  margin: 0px 0 70px 0;
-}
-p {
-  color: rgba(255,255,255,1);
-  background: black;
-  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
-  padding: 10px;
-  line-height: 28px;
-  text-align: justify;
-  position: absolute;
-  bottom: 0;
-  margin: 0;
-  height: 30px;
-  transition: height .5s;
-  -webkit-transition: height .5s;
-  -moz-transition: height .5s;
-}
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript">
+		$('li').hide();
+		</script>
+		<style type="text/css">
+		body{
+			text-align:center;
+			background: url("http://www.hdwallpapers.in/walls/pink_cosmos_flowers-wide.jpg");
+			background-size: cover;
+      background-position:center;
+      color: black;
+      font-family: helvetica;
+      input {
+      border: 0;
+      padding:10px;
+      font-size: 18px;
+    }
+		h1{
+			color:black;
+			text-align:center;
+		}
+		p{
+			font-family: "arial";
+			color:black;
+			text-align:center;
+		}
+		h2{
+			text-align:center;
+		}
+		</style>
+	<body>
+		<h1><strong>Pippa Pearce</strong></h1>
+		<h2>About Me</h2>
+		<img src="http://www.hdwallpapers.in/walls/pink_cosmos_flowers-wide.jpg" width="170px" height="300px" align="center">
+		<p></p>
+		<p>Hi, I'm Pippa and I am an MSc Digital Marketing student from The University of Southampton, looking to find work in Digital Marketing and the Third Sector.</p>
 
-small {
-  opacity: 0;
-}
+		<h2>Educational Background</h2>
+		<p>
+		<table><table align="center">
+		<thread>
+		<tr>
+		<th><b> Year</b></th>
+		<th><b>Qualification</b></th>
+		</tr>
+		</thread>
 
-.show-description p {
-  height: 150px;
-}
-
-.show-description small {
-  opacity: 1;
-}
-
-.first{
-  background-image: url("http://dash.ga.co/assets/firstcourse.jpg");
-}
-.second{
-  background-image: url("http://dash.ga.co/assets/secondcourse.jpg");
-}
-.dessert{
-  background-image: url("http://dash.ga.co/assets/dessertcourse.jpg");
-}
-.price {
-  float: right;
-}
-@media (max-width: 500px) {
-  h1 {
-    font-size: 50px;
-    margin-top: 20px;
-    line-height: 40px;
-  }
-  h2 {
-    font-size: 20px;
-    margin: 20px 0 30px 0;
-  }
-  div {
-    margin: 20px 12px 0 12px;
-  }
-  p {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  small {
-    font-size: 16px;
-  }
-}
-
-</style>
-
-</head>
-
-<body>
-<h1>esha's restaurant</h1>
-<h2>a New York City eatery</h2>
-<div class="first">
-  <p>welsh onion soko <span class="price">$14</span><br />
-  <small>Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil. </small></p>
-</div>
-
-<div class="second">
-  <p>pastrami boudin tongue <span class="price">$22</span><br />
-  <small>Tri-tip capicola kielbasa salami brisket chicken rump strip steak drumstick. Meatloaf chuck boudin ribeye pork jowl. Andouille bacon jowl meatloaf pork loin prosciutto bresaola.</small></p>
-</div>
-  
-<div class="dessert">
-  <p>fruitcake marzipan pudding dragee <span class="price">$8</span><br />
-  <small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</small></p>
-</div>
-
-<script>
-  $('div').on('click', function() {
-      $(this).toggleClass('show-description');
-  });
-</script>
-
+		<tbody>
+		<tr>
+		<td>2006-2011</td>
+		<td>11 GCSEs A*-B</td>
+		</tr>
+		<tr>
+		<td>2011-2013</td>
+		<td> A-Levels in Business and Economics, English Language and Psychology (A-B)</td>
+		</tr>
+		<tr>
+		<td>2012-2013</td>
+		<td> Extended Project Qualification on 'An Investgation into Branding' (A)</td>
+		</tr>
+		<tr>
+		<td>2013-2016</td>
+		<td>1st Class Honours in BSc Management at The University of Southampton</td></tr>
+		<tr>
+		<td>2016-2017</td>
+		<td>MSc Digital Marketing at The University of Southampton</td>
+		</tbody></tr>
+		</p>
+	</head>
+</html>
+<footer>
+	<div class="five columns">
+		<p>Pippa Pearce © 2016 | All Rights Preserved<br>
+			Designed and Developed by Pippa Pearce
+		</p></div>
+</footer>
 </body>
+</html>
 
 
