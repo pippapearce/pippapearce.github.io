@@ -6,16 +6,18 @@
 <link href="/normalize.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
+<script src="/assets/jquery.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+ 
 <style>
 	
 	body{
-		background: #97D9FD;
+  		background:rgba(151, 217, 253,1);
 		text-align: center;
 		font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif";
+		margin: auto;
+		max-width: 600px;
 	}
 	
 	header{
@@ -47,17 +49,17 @@
 	p{
 		text-align: center;
 		font-family: Segoe, Segoe UI, DejaVu Sans, Trebuchet MS, Verdana," sans-serif";
-		color: #616161;
-		
-	}
-	
-	
+		color: #616161;	
 	
 }
+	button{
+		font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, DejaVu Sans, Verdana," sans-serif"; 
+		background: black;
+		color: white;
+	}
 
 	footer {
 	position:absolute;
-	background-color:#326872;
 	/*height: 100%;*/
 	color:white;
 	bottom:0;
@@ -79,20 +81,41 @@
     	<li><a href="CV.html">CV</a></li>
       	<li><a href="Contact.html">Contact</a></li>
  
-    </ul>
+  </ul>
 
 </header>
 
 	<h1> My CV</h1>
-<p> If you would like to read more about the various roles and experiences I have been involved with you can view my LinkedIn profile using the link below, or you can request a copy of my CV <a href='pippapearce.github.io/contact.html'>here.</a>
+<p> If you would like to read more about the various roles and experiences I have been involved with you can view my LinkedIn profile using the link below, or you can request a copy of my CV <a href='pippapearce.github.io/contact.html'>here.</a><br>
+
+<p> This may seem like a bit of a boring page, so why not be a bit daring and add some excitement to it...</p>
 	
-  <footer>
-  <div><strong>Pippa Pearce © 2016 | All Rights Reserved<br>
+<button class="BackgroundColours"> What does this button do?</button><br><br>
+	
+<footer>
+  <div><strong>Pippa Pearce© 2016 | All Rights Reserved<br>
 Designed and Developed by Pippa Pearce</strong></div>
 <div>
 	<a href="https://twitter.com/PippaPearce"><img src="https://lumserve.files.wordpress.com/2015/02/button-black-twitter.png" width="50" height="51" alt=""/></strong></a>
 	<a href="https://uk.linkedin.com/in/pippapearce"><img src="http://image.flaticon.com/icons/svg/56/56591.svg" alt="" width="51" height="51"/></a>
 	<div>
 </footer>
+
+
+<script>
+	// When color button is clicked...
+$(".BackgroundColours").click(function() {
+  // assign each named color a random number 0-255
+  var red = Math.floor(Math.random() * 255);
+  var green = Math.floor(Math.random() * 255);
+  var blue = Math.floor(Math.random() * 255);
+  
+// Generate an RGBA value from red, green, and blue
+var randomRGBA = 'rgba('+red+','+green+','+blue+',1)';
+	// Change background colour
+  $("body").css("background", randomRGBA);
+  //Display the RGBA value in an alert window
+});
+	</script>
 </body>
 </html>
